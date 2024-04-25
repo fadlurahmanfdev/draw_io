@@ -1,0 +1,79 @@
+<mxfile host="Electron" modified="2024-04-25T08:31:14.569Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="wKSg1Wtc_R7siU4Vu2Dd" version="22.1.18" type="device">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="1578" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-2" value=":ViewModel" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="zdvuHCyIY7IRIvCnZunm-2">
+          <mxGeometry x="45" y="80" width="10" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-4" value=":CryptoFeatureUseCase" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="240" y="130" width="150" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="zdvuHCyIY7IRIvCnZunm-4">
+          <mxGeometry x="70" y="80" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-5" value=":CryptoRSARepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="420" y="130" width="130" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-15" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="zdvuHCyIY7IRIvCnZunm-5">
+          <mxGeometry x="60" y="80" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-13" value=":1. encrypt plain text" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="155" y="210" as="sourcePoint" />
+            <mxPoint x="310" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-14" value=":2. decrypt AES key" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="zdvuHCyIY7IRIvCnZunm-15">
+          <mxGeometry x="0.0313" width="80" relative="1" as="geometry">
+            <mxPoint x="320" y="230" as="sourcePoint" />
+            <mxPoint x="475" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-16" value=":3. decrypted AES key" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="zdvuHCyIY7IRIvCnZunm-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="260" as="sourcePoint" />
+            <mxPoint x="320" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-18" value=":CryptoAESRepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="570" y="130" width="140" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-19" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="zdvuHCyIY7IRIvCnZunm-18">
+          <mxGeometry x="65" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-20" value=":4. encrypt plain text" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="zdvuHCyIY7IRIvCnZunm-19">
+          <mxGeometry x="0.0328" width="80" relative="1" as="geometry">
+            <mxPoint x="320" y="310" as="sourcePoint" />
+            <mxPoint x="475" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-21" value=":5. encrypted plain text" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="zdvuHCyIY7IRIvCnZunm-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="635" y="350" as="sourcePoint" />
+            <mxPoint x="480" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-22" value=":6. encrypted plain text" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="zdvuHCyIY7IRIvCnZunm-3">
+          <mxGeometry x="-0.0011" relative="1" as="geometry">
+            <mxPoint x="312.5" y="370" as="sourcePoint" />
+            <mxPoint x="180" y="370" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-23" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Best Practice Encrypt Plain Text Using RSA&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="50" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zdvuHCyIY7IRIvCnZunm-24" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;EXPLANATION&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;:&lt;/span&gt;&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;ul style=&quot;background-color: rgb(255, 255, 255); line-height: 160%;&quot;&gt;&lt;li style=&quot;&quot;&gt;:&lt;b&gt;1.&lt;/b&gt; add plain text to UseCase.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;:&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;2.&lt;/b&gt;&amp;nbsp;decrypt AES Key using RSA Private Key that you already saved in previous section.&lt;/li&gt;&lt;li style=&quot;&quot;&gt;:&lt;b&gt;3.&lt;/b&gt; return decrypted AES Key&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;b&gt;:4.&lt;/b&gt; encrypt plain text from step {&lt;b&gt;:1.&lt;/b&gt;} using decrypted AES key that you get from step {&lt;b&gt;:4.&lt;/b&gt;}&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;b&gt;:5. &lt;/b&gt;return encrypted plain text from AES Repository to UseCase&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;:6. &lt;/b&gt;return encrypted plain text from UseCase to ViewModel.&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#ffffff;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="731" height="270" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
